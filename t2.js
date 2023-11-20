@@ -44,8 +44,8 @@ async function obterCondicoesAtuais(latitude, longitude) {
         const feels_likeCelsius = kelvinToCelsius(feels_likeKelvin);
         const descricaoTraduzida = traduzirDescricao(descricao);
 
-        console.log(`Sensação térmica: ${feels_likeCelsius.toFixed(2)}°C`);
-        console.log(`Descrição do tempo: ${descricaoTraduzida}`);
+        console.log(`Temperatura: ${feels_likeCelsius.toFixed(2)}°C`);
+        console.log(`Descrição climática: ${descricaoTraduzida}`);
       } else {
         console.error('Dados meteorológicos indisponíveis para as coordenadas fornecidas.');
       }
